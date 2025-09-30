@@ -15,11 +15,11 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item =input("Enter item to add: ").lower().strip()
+            item =input("Enter the item to add: ").lower().strip()
             shopping_list.append(item)
             pass 
         elif choice == '2':
-            item =input("Enter item to remove: ").lower().strip()
+            item =input("Enter the item to remove: ").lower().strip()
             if item in shopping_list:
                 shopping_list.remove(item) 
             else:
