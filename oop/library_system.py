@@ -1,12 +1,15 @@
 # library_system.py
 
 class Book:
+    counter = 0
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
+    
+
 
 
 class EBook(Book):
@@ -38,3 +41,7 @@ class Library:
     def list_books(self):
         for book in self.books:
             print(book)
+
+
+
+ # Outputs: 1
